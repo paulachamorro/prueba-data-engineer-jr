@@ -5,7 +5,7 @@ from transformations import procesamiento
 def iniciar_spark():
     spark = (
         SparkSession.builder
-        .master("local[*]")
+        .master("local[*]")       
         .appName("pipeline_prueba")
         .getOrCreate()
     )

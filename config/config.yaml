@@ -8,7 +8,17 @@ country: 'EC'
 paths:
   input: 'data/raw/global_mobility_data_entrega_productos.csv'
   output: 'data/processed/'
+  errors: 'data/rejected/'
 
 units:
   CS: 20
   ST: 1
+
+filters:
+   valid_tipo_entrega:
+    rutina:
+      - ZPRE
+      - ZVE1
+    con_bonificacion:
+      - Z04
+      - Z05
