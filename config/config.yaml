@@ -1,0 +1,14 @@
+#Parametrización de variables
+
+start_date: '20250101'
+end_date: '20250220'
+country: 'EC'
+  #Países: EC, GT, HN, JM, PE, SV
+
+paths:
+  input: 'data/raw/global_mobility_data_entrega_productos.csv'
+  output: 'data/processed/'
+
+units:
+  CS: 20
+  ST: 1
